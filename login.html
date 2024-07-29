@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - EcoSmart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+       
+        .smartphone {
+            position: relative;
+            width: 360px;
+            height: 640px;
+            margin: auto;
+            border: 16px black solid;
+            border-top-width: 60px;
+            border-bottom-width: 60px;
+            border-radius: 36px;
+        }
+
+     
+        .smartphone:before {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 5px;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #333;
+            border-radius: 10px;
+        }
+
+        
+        .smartphone:after {
+            content: '';
+            display: block;
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            left: 50%;
+            bottom: -65px;
+            transform: translate(-50%, -50%);
+            background: #333;
+            border-radius: 50%;
+        }
+
+       
+        .content {
+            padding: 20px;
+            display: flex;
+            background: #8fbc8f;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            
+        }
+
+        .form-field {
+            margin: 20px 0;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #000;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="smartphone">
+    <div class="content">
+        <h1>Login</h1>
+        <form>
+            <div class="form-field">
+                <label>Username</label>
+                <input type="text" placeholder="Enter your username">
+            </div>
+            <div class="form-field">
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
