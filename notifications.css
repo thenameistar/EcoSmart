@@ -1,0 +1,148 @@
+
+.smartphone {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.smartphone:before,
+.smartphone:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #333;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.smartphone:before {
+    width: 60px;
+    height: 5px;
+    top: -30px;
+}
+
+.smartphone:after {
+    width: 35px;
+    height: 35px;
+    bottom: -65px;
+}
+
+
+.content {
+    width: 300px;
+    padding: 20px;
+    overflow-y: auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ccc; 
+}
+
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px; 
+    color: #666; 
+    margin-top: 20px;
+}
+
+
+.notification {
+    background: #f9f9f9; 
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.notification:hover {
+    background-color: #e0e0e0;
+}
+
+
+.notification .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+button {
+    padding: 5px 20px; 
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+
+.footer-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+    background: white; 
+    color: black; 
+    border-top: 1px solid #ccc; 
+}
+
+.footer-nav div {
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+}
+
+.footer-nav .circle {
+    width: 40px;
+    height: 70px;
+    background: #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -25px;
+    transition: background-color 0.3s;
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+.footer-nav .circle:hover {
+    background: #ccc;
+}
+
+.footer-nav img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer-nav .icon {
+    margin: 0;
+}
