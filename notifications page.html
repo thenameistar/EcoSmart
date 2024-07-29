@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Interface Prototype</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  
+    .smartphone {
+        position: relative;
+        width: 360px;
+        height: 640px;
+        margin: auto;
+        border: 16px black solid;
+        border-top-width: 60px;
+        border-bottom-width: 60px;
+        border-radius: 36px;
+        overflow: hidden;
+        background: #fff;
+    }
+
+  
+    .smartphone:before {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 5px;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #333;
+        border-radius: 10px;
+    }
+
+ 
+    .smartphone:after {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        left: 50%;
+        bottom: -65px;
+        transform: translate(-50%, -50%);
+        background: #333;
+        border-radius: 50%;
+    }
+
+   
+    body, h1, p {
+        margin: 0;
+        padding: 0;
+    }
+
+    
+    .content {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background: #f0f0f0;
+        height: 100%;
+        overflow: auto;
+    }
+
+   
+    .section-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px 0;
+        color: #333;
+    }
+
+   
+    .notification {
+        background: #e0e0e0; 
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+    }
+   
+    .notification:hover {
+        background-color: #d0d0d0;
+    }
+    
+    .icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    
+    .footer-nav {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 5px 0;
+        background: white;
+        color: black;
+        border-top: 1px solid #ccc; 
+    }
+
+    .footer-nav div {
+        cursor: pointer;
+        flex: 1;
+        text-align: center;
+    }
+
+    .footer-nav .circle {
+        width: 40px;
+        height: 70px;
+        background: #ddd;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -25px;
+        transition: background-color 0.3s;
+        font-size: 24px; 
+        font-weight: bold; 
+    }
+
+    .footer-nav .circle:hover {
+        background: #ccc;
+    }
+
+    .footer-nav img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer-nav .icon {
+        margin: 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="smartphone">
+    <div class="content">
+        <h1>Notifications</h1>
+
+        <h2>Energy usage update</h2>
+        <div class="notification">
+            <img src="leaf.png" alt="Eco Icon" class="icon">
+            <div><strong>Eco</strong> Recommended energy-saving actions</div>
+        </div>
+        <div class="notification">
+            <img src="temperature.png" alt="Alert Icon" class="icon">
+            <div>
+                <strong>Alert:</strong> Adjust settings to save energy
+                <button class="view-settings">View settings</button>
+            </div>
+        </div>
+
+        <div class="section-title">Weekly energy report</div>
+        <div class="notification">
+            <img src="diagram.png" alt="Trend Icon" class="icon">
+            <div><strong>Trend</strong> Insights on energy usage patterns</div>
+        </div>
+        <div class="notification">
+            <img src="diagram.png" alt="Sustainability Icon" class="icon">
+            <div><strong>Trend</strong> Sustainability trends</div>
+        </div>
+
+        <div class="section-title">Recent activity</div>
+        <div class="notification">
+            <img src="temperature.png" alt="Heating Icon" class="icon">
+            <div><strong>Heating</strong> Heating adjustments</div>
+        </div>
+        <div class="notification">
+            <img src="chat.png" alt="Community Icon" class="icon">
+            <div><strong>Community</strong> Engage with other users</div>
+        </div>
+        </div>
+
+    <div class="footer-nav">
+        <div><img src="home.png" alt="Home Icon" class="icon"></div>
+        <div><img src="search.png" alt="Search Icon" class="icon"></div>
+        <div class="circle">+</div>
+        <div><img src="chatwhite.png" alt="Chat Icon" class="icon"></div>
+        <div><img src="profile.png" alt="Profile Icon" class="icon"></div>
+    </div>
+</div>
+
+</body>
+</html>
