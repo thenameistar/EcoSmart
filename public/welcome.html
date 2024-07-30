@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to EcoSmart</title>
-    <link rel="stylesheet" href="welcome.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to EcoSmart</title>
+<link rel="stylesheet" href="welcome.css">
 </head>
 <body>
 <div class="smartphone">
@@ -15,28 +15,36 @@
             <div class="progress-bar"><span style="width:76%;"></span></div>
             <p>76%</p>
         </div>
-        <div class="category" onclick="redirectToNotifications();">
-            <div class="icon lighting"></div>
+        <div class="option" onclick="window.location.href='overview.html';">Overview</div>
+        <div class="option" onclick="window.location.href='recommendations.html';">Recommendations</div>
+        <div class="category">
+            <img src="lightbulb.png" alt="Lightbulb Icon" class="icon">
             <span>5 New Lighting Usage</span>
         </div>
-        <div class="category" onclick="redirectToNotifications();">
-            <div class="icon heating"></div>
+        <div class="category">
+            <img src="temperature.png" alt="Temperature Icon" class="icon">
             <span>2 New Heating Usage</span>
         </div>
-        <div class="category" onclick="redirectToNotifications();">
-            <div class="icon water"></div>
+        <div class="category">
+            <img src="diagram.png" alt="Water Usage Icon" class="icon">
             <span>9 New Water Usage</span>
         </div>
-        <div class="category" onclick="redirectToNotifications();">
-            <div class="icon urgent"></div>
+        <div class="category">
+            <div class="icon urgent"></div> <!-- No specific image here as per your description -->
             <span>2 New Urgent</span>
         </div>
-    </div>
-</div>
-<script>
+        <div class="footer-nav">
+            <div><img src="home.png" alt="Home Icon" class="icon"></div>
+            <div><img src="search.png" alt="Search Icon" class="icon"></div>
+            <div class="circle">+</div>
+            <div><img src="chatwhite.png" alt="Chat Icon" class="icon"></div>
+            <div><img src="profile.png" alt="Profile Icon" class="icon"></div>
+        </div>
+        <script>
     function redirectToNotifications() {
         window.location.href = 'notifications.html';
     }
-</script>
+    </div>
+</div>
 </body>
 </html>
