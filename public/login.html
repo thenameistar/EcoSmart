@@ -13,20 +13,17 @@
         <div class="login-form">
     <h1>Login</h1>
     <form id="loginForm">
-        <!-- Username Field -->
         <div class="form-field">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required placeholder="Enter your username">
         </div>
 
-        <!-- Password Field -->
         <div class="form-field">
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required placeholder="Enter your password">
         </div>
 
-        <!-- Login Button -->
-        <button id="loginButton" type="button">Login</button> <!-- Added type="button" and ID -->
+        <button id="loginButton" type="button">Login</button>
     </div>
 </div>
 
@@ -35,10 +32,10 @@
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
 
-        if (username && password) { // Basic check to ensure fields are not empty
-            window.location.href = '/overview'; // Redirect to the overview page
+        if (username && password) { 
+            window.location.href = '/overview'; 
         } else {
-            alert('Please enter both username and password.'); // Alert if any field is empty
+            alert('Please enter both username and password.'); 
         }
     });
 </script>
