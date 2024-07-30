@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to EcoSmart</title>
+    <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+<div class="smartphone">
+    <div class="content">
+        <h1>Welcome to EcoSmart</h1>
+        <div class="section">
+            <p>Energy Insights</p>
+            <div class="progress-bar"><span style="width:76%;"></span></div>
+            <p>76%</p>
+        </div>
+        <div class="category" onclick="redirectToNotifications();">
+            <div class="icon lighting"></div>
+            <span>5 New Lighting Usage</span>
+        </div>
+        <div class="category" onclick="redirectToNotifications();">
+            <div class="icon heating"></div>
+            <span>2 New Heating Usage</span>
+        </div>
+        <div class="category" onclick="redirectToNotifications();">
+            <div class="icon water"></div>
+            <span>9 New Water Usage</span>
+        </div>
+        <div class="category" onclick="redirectToNotifications();">
+            <div class="icon urgent"></div>
+            <span>2 New Urgent</span>
+        </div>
+    </div>
+</div>
+<script>
+    function redirectToNotifications() {
+        window.location.href = 'notifications.html';
+    }
+</script>
+</body>
+</html>

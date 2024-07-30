@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Interface Prototype</title>
+<link rel="stylesheet" href="notifications.css">
+
+</head>
+<body>
+
+<div class="smartphone">
+    <div class="content">
+        <h1>Notifications</h1>
+
+        <h2>Energy usage update</h2>
+        <div class="notification" draggable="true" ondragstart="drag(event)" id="drag1">
+    <img src="leaf.png" alt="Eco Icon" class="icon">
+    <div><strong>Eco</strong> Recommended energy-saving actions</div>
+       </div>
+        <div class="notification">
+            <img src="temperature.png" alt="Alert Icon" class="icon">
+            <div>
+                <strong>Alert:</strong> Adjust settings to save energy
+                <button class="view-settings">View settings</button>
+            </div>
+        </div>
+
+        <div class="section-title">Weekly energy report</div>
+        <div class="notification">
+            <img src="diagram.png" alt="Trend Icon" class="icon">
+            <div><strong>Trend</strong> Insights on energy usage patterns</div>
+        </div>
+        <div class="notification">
+            <img src="diagram.png" alt="Sustainability Icon" class="icon">
+            <div><strong>Trend</strong> Sustainability trends</div>
+        </div>
+
+        <div class="section-title">Recent activity</div>
+        <div class="notification">
+            <img src="temperature.png" alt="Heating Icon" class="icon">
+            <div><strong>Heating</strong> Heating adjustments</div>
+        </div>
+        <div class="notification">
+            <img src="chat.png" alt="Community Icon" class="icon">
+            <div><strong>Community</strong> Engage with other users</div>
+        </div>
+        </div>
+
+    <div class="footer-nav">
+        <div><img src="home.png" alt="Home Icon" class="icon"></div>
+        <div><img src="search.png" alt="Search Icon" class="icon"></div>
+        <div class="circle">+</div>
+        <div><img src="chatwhite.png" alt="Chat Icon" class="icon"></div>
+        <div><img src="profile.png" alt="Profile Icon" class="icon"></div>
+    </div>
+</div>
+
+</body>
+</html>

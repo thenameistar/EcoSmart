@@ -1,0 +1,85 @@
+
+/* Smartphone styling */
+.smartphone {
+    position: relative;
+    width: 360px; /* Set the width of the smartphone frame */
+    height: 640px; /* Set the height of the smartphone frame */
+    margin: auto; /* Center the smartphone frame horizontally */
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+    display: flex; /* Added to center the content vertically and horizontally */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+}
+
+.smartphone:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+}
+
+.content {
+    width: 90%; /* Adjust width to allow for proper centering */
+    max-width: 300px; /* Ensure it doesn't grow beyond 300px */
+    overflow: hidden; /* Hide scrollbars */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 20px; /* Ensure padding does not push content out of center alignment */
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center; /* Center the text */
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin: 20px; /* Adjust margins for consistency */
+    text-align: center;
+}
+
+button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px; /* Adjust spacing above the button */
+}
+
+button:hover {
+    background-color: #333;
+}

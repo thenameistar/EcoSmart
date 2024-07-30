@@ -1,0 +1,125 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.smartphone {
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin: auto;
+    border: 16px solid black;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.content {
+    width: calc(100% - 0px); /* Account for padding */
+    max-width: 550px; /* Adjust as needed */
+    height: calc(100% - 0px); /* Adjusted for any headers/footers/padding */
+    padding: 50px;
+    background: #8fbc8f; /* Adjust the background color as needed */
+   overflow-y: auto; /* Enables vertical scrolling when content exceeds the container height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;  /* Includes padding and border in width/height */
+}
+
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.footer-nav {
+    position: absolute;
+    bottom: 0;
+    width: 320px;
+    background: #ffffff;
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-nav div, .footer-nav .circle {
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+}
+
+.footer-nav .circle {
+    background: #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 24px; /* Suitable for icons like a '+' */
+    justify-content: center;
+    margin-top: -15px; /* Slightly raise the circle above the nav bar */
+    transition: background-color 0.3s;
+}
+
+.footer-nav .circle:hover {
+    background-color: #ccc; /* Darker grey on hover */
+}
+.footer-nav img {
+    width: 40px;
+    height: 40px;
+}
+
+.section, .option, .category {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background: black; /* Placeholder, replace with actual icons */
+    margin-right: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: grey;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background: limegreen;
+}
+
+.option, .category {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover, .category:hover {
+    background-color: #e0e0e0;
+
+}
+

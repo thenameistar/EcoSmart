@@ -1,0 +1,139 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Full page background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smartphone {
+    position: relative;
+    width: 360px; 
+    height: 640px;
+    margin: auto;
+    border: 16px solid black;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+    background: #fff; /* Background color inside the smartphone */
+    overflow: hidden; /* Ensures nothing spills outside the smartphone frame */
+}
+
+/* Speaker and Home button styles */
+.smartphone:before, .smartphone:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #333;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.smartphone:before {
+    width: 60px;
+    height: 5px;
+    top: -30px; /* Position of the speaker */
+    border-radius: 10px;
+}
+
+.smartphone:after {
+    width: 35px;
+    height: 35px;
+    bottom: -65px; /* Position of the home button */
+}
+
+.content {
+    width: 90%;
+    height: calc(100% - 120px); /* Adjusted height considering the padding */
+    padding: 30px;
+    background: #8fbc8f; /* Light green background */
+    overflow-y: auto; /* Allows scrolling */
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.notification, .category {
+    background: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer; /* Indicates that the item is clickable */
+    transition: background-color 0.3s ease;
+}
+
+.notification:hover, .category:hover {
+    background-color: #e0e0e0; /* Light grey on hover for better interaction feedback */
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #ffffff;
+    border-top: 1px solid #ccc;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-nav div, .footer-nav .circle {
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+}
+
+.footer-nav .circle {
+    background: #ddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 24px; /* Suitable for icons like a '+' */
+    justify-content: center;
+    margin-top: -15px; /* Slightly raise the circle above the nav bar */
+    transition: background-color 0.3s;
+}
+
+.footer-nav .circle:hover {
+    background-color: #ccc; /* Darker grey on hover */
+}
+
+.footer-nav img {
+    width: 40px;
+    height: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #000000; /* Standard blue button color */
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #b9b0b0;
+}
