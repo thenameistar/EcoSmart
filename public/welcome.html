@@ -17,20 +17,20 @@
         </div>
         <div class="option" onclick="window.location.href='overview.html';">Overview</div>
         <div class="option" onclick="window.location.href='recommendations.html';">Recommendations</div>
-        <div class="category">
+        <div class="category" onclick="redirectToNotifications()">
             <img src="lightbulb.png" alt="Lightbulb Icon" class="icon">
             <span>5 New Lighting Usage</span>
         </div>
-        <div class="category">
+        <div class="category" onclick="redirectToNotifications()">
             <img src="temperature.png" alt="Temperature Icon" class="icon">
             <span>2 New Heating Usage</span>
         </div>
-        <div class="category">
+        <div class="category" onclick="redirectToNotifications()">
             <img src="diagram.png" alt="Water Usage Icon" class="icon">
             <span>9 New Water Usage</span>
         </div>
-        <div class="category">
-            <div class="icon urgent"></div> <!-- No specific image here as per your description -->
+        <div class="category" onclick="redirectToNotifications()">
+            <div class="icon urgent"></div>
             <span>2 New Urgent</span>
         </div>
         <div class="footer-nav">
@@ -42,7 +42,7 @@
         </div>
     </div>
 </div>
-    <script>
+<script>
     function redirectToNotifications() {
         window.location.href = 'notifications.html';
     }
