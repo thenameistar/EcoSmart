@@ -2,7 +2,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #ffffff; /* Full page background color */
+    background-color: #ffffff; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,11 +17,11 @@ body, html {
     border-top-width: 60px;
     border-bottom-width: 60px;
     border-radius: 36px;
-    background: #fff; /* Background color inside the smartphone */
-    overflow: hidden; /* Ensures nothing spills outside the smartphone frame */
+    background: #fff; 
+    overflow: hidden; 
 }
 
-/* Speaker and Home button styles */
+
 .smartphone:before, .smartphone:after {
     content: '';
     display: block;
@@ -35,22 +35,22 @@ body, html {
 .smartphone:before {
     width: 60px;
     height: 5px;
-    top: -30px; /* Position of the speaker */
+    top: -30px; 
     border-radius: 10px;
 }
 
 .smartphone:after {
     width: 35px;
     height: 35px;
-    bottom: -65px; /* Position of the home button */
+    bottom: -65px; 
 }
 
 .content {
     width: 90%;
-    height: calc(100% - 120px); /* Adjusted height considering the padding */
+    height: calc(100% - 120px);
     padding: 30px;
-    background: #8fbc8f; /* Light green background */
-    overflow-y: auto; /* Allows scrolling */
+    background: #8fbc8f; 
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
 }
@@ -72,12 +72,12 @@ h1, h2 {
     margin: 5px 0;
     display: flex;
     align-items: center;
-    cursor: pointer; /* Indicates that the item is clickable */
+    cursor: pointer; 
     transition: background-color 0.3s ease;
 }
 
 .notification:hover, .category:hover {
-    background-color: #e0e0e0; /* Light grey on hover for better interaction feedback */
+    background-color: #e0e0e0; 
 }
 
 .icon {
@@ -108,14 +108,14 @@ h1, h2 {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    font-size: 24px; /* Suitable for icons like a '+' */
+    font-size: 24px; 
     justify-content: center;
-    margin-top: -15px; /* Slightly raise the circle above the nav bar */
+    margin-top: -15px; 
     transition: background-color 0.3s;
 }
 
 .footer-nav .circle:hover {
-    background-color: #ccc; /* Darker grey on hover */
+    background-color: #ccc; 
 }
 
 .footer-nav img {
@@ -125,7 +125,7 @@ h1, h2 {
 
 button {
     padding: 10px 20px;
-    background-color: #000000; /* Standard blue button color */
+    background-color: #000000; 
     color: white;
     border-radius: 5px;
     border: none;
